@@ -1,8 +1,8 @@
 <?php
     return $config = [
         'root' => dirname(__DIR__),
-		'path' => [
-			'local' => "",
+		'environment' => [
+			'local' => "/ils/",
 			'sandbox' => "",
 			'live' => ""
 		],
