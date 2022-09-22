@@ -2,7 +2,7 @@
     return $auth = [
         'auth' => [
             'defaults' => [
-                'auth' => 'google',
+                'auth' => '',
                 'session' => 'ils_user'
         ],
             'google' => [

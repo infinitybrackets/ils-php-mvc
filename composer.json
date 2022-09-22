@@ -1,5 +1,5 @@
 {
-    "name": "infinitybrackets/cvsu-ils",
+    "name": "cvsu-ils/ils",
     "description": "Integrated library system of Cavite State University",
     "type": "project",
     "require": {
@@ -7,8 +7,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Infinitybrackets\\": "vendor/infinity-brackets/src/"
+            "InfinityBrackets\\": "vendor/infinitybrackets/php-mvc-core/src/"
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+      
+        ]
     },
     "authors": [
         {

@@ -21,7 +21,9 @@ $app = new Application(array_merge($config, $auth));
 | GUEST View Routes
 |--------------------------------------------------------------------------
 */
-$app->router->Get('/', [\IntegratedLibrarySystem\App\Controllers\LandingController::class, 'Index']);
+$app->router->Get('/', function() {
+    echo "Hello World";
+});
 /*
 |--------------------------------------------------------------------------
 | GUEST View Routes
