@@ -5,8 +5,7 @@
 |--------------------------------------------------------------------------
 */
 require_once 'vendor/autoload.php';
-require_once 'config/app.php';
-require_once 'config/auth.php';
+require_once 'bootstrap/app.php';
 
 use InfinityBrackets\Core\Application;
 /*
@@ -15,7 +14,7 @@ use InfinityBrackets\Core\Application;
 |--------------------------------------------------------------------------
 */
 
-$app = new Application(array_merge($config, $auth));
+$app = new Application($config);
 /*
 |--------------------------------------------------------------------------
 | GUEST View Routes
