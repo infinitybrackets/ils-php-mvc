@@ -1,27 +1,6 @@
 <?php
     return $config = [
         'root' => dirname(__DIR__),
-		'environment' => [
-			'local' => "/ils/",
-			'sandbox' => "",
-			'live' => ""
-		],
-		'connections' => [
-			'ils-local' => [
-				'DB_DRIVER' => "mysql",
-				'DB_HOST' => "localhost",
-				'DB_DATABASE' => "database",
-				'DB_USERNAME' => "root",
-				'DB_PASSWORD' => ""
-			],
-			'ils-live' => [
-				'DB_DRIVER' => "mysql",
-				'DB_HOST' => "localhost",
-				'DB_DATABASE' => "database",
-				'DB_USERNAME' => "root",
-				'DB_PASSWORD' => ""
-			]
-		],
         'app' => [
 			'organization' => "Cavite State University",
 			'orgabbr' => "CvSU",
@@ -31,7 +10,6 @@
 			'subsystemabbr' => "",
 			'subsystemversion' => "",
 			'appurl' => ""
-		],
-		'userClass' => "\IntegratedLibrarySystem\Core\Controllers\User"
+		]
     ];
 ?>
