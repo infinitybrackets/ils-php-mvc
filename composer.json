@@ -3,7 +3,7 @@
     "description": "Integrated library system of Cavite State University",
     "type": "project",
     "require": {
-        "infinitybrackets/php-mvc-core": "^1.0"
+        "cvsu-ils/core": "^1.0"
     },
     "autoload": {
         "psr-4": {
